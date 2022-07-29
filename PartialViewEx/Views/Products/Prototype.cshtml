@@ -1,0 +1,28 @@
+﻿@model PartialViewEx.Models.Product
+
+<table width="400" border="1" align="center">
+    <tr>
+        <td>
+            <img src='@Url.Content(Model.Photo)' width="400" height="400" />
+        </td>
+        <td>
+            <table frame="box" rules="all" align="center"  width="400" height="400">
+                <tr>
+                <tr>
+                    <td>Product Id</td>
+                    <td> @Model.Pid </td>
+                </tr>
+
+                <tr>
+                    <td>Product Name</td>
+                    <td>@Model.Name</td>
+                </tr>
+
+                <tr>
+                    <td>Product Price</td>
+                    <td> @Model.Price </td>
+                </tr>
+
+            </table>
+    </tr>
+</table>

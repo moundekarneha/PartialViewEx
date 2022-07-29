@@ -1,0 +1,19 @@
+﻿@model List<PartialViewEx.Models.Product>
+
+<h2 align="center">   Products Catalog </h2>
+using
+Html.Partial
+@foreach (var item in Model)
+{
+    @Html.Partial("Prototype", item)
+}
+
+<br>
+using
+Html.RenderPartial
+@foreach (var item in Model)
+{
+    
+        Html.RenderPartial("Prototype", item);
+    
+}
